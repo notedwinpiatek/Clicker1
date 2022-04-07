@@ -42,24 +42,45 @@ namespace Clicker
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void A1UpgradeAmount_Click(object sender, EventArgs e)
         {
              
         }
 
         private void A1UpgradeInterval_Click(object sender, EventArgs e)
         {
-            A1Interval++;
-            A1IntervalTextBox.Text = A1Interval.ToString();
-            A1Timer.Interval = (60 / A1Interval) * 100;
-            if (!A1Timer.Enabled)
-                A1Timer.Enabled = true;
-            Cash -= upgradeCost;
+            int upgradeCost = A1Interval * 100;
+            if (Cash >= upgradeCost)
+            {
+                A1Interval++;
+                A1IntervalTextBox.Text = A1Interval.ToString();
+                A1Timer.Interval = (60 / A1Interval) * 100;
+                if (!A1Timer.Enabled)
+                    A1Timer.Enabled = true;
+                Cash -= upgradeCost;
+
+            }
         }
 
         private void A1Tick(object sender, EventArgs e)
         {
             Cash += A1Ammount;
+            label1.Text = "Money: $" + cash.ToString();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
