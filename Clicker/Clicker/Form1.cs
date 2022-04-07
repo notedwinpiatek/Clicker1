@@ -4,7 +4,7 @@ namespace Clicker
     {
         int cash;
         int buttonLevel;
-        int A1Amount;
+        int A1Ammount;
         int A1Interval;
         public Form1()
         {
