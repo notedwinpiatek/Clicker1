@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Clicker",
+    "\\Clicker\\Clicker"
   ],
-  "SelectedNode": "\\Clicker.cs",
+  "SelectedNode": "\\Clicker\\Clicker\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
