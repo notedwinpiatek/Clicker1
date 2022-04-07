@@ -4,16 +4,16 @@ namespace Clicker
     {
         int cash;
         int buttonLevel;
-        int A1Amount
-        int A1Interval
+        int A1Amount;
+        int A1Interval;
         public Form1()
         {
             InitializeComponent();
             cash = 0;
             buttonLevel = 1;
-            A1Amount = 10;
+            A1Ammount = 10;
             A1Interval = 0;
-            A1AmountTextBox.Text = A1Amount.ToString();
+            A1AmmountTextBox.Text = A1Ammount.ToString();
             A1IntervalTextBox.Text = A1Interval.ToString();
         }
 
