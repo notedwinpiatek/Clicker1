@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,8 +38,7 @@
             this.frequency = new System.Windows.Forms.Button();
             this.quantity = new System.Windows.Forms.Button();
             this.quantityammount = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
+            this.Title = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -112,17 +110,13 @@
             this.quantityammount.ReadOnly = true;
             this.quantityammount.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // timer1
+            // Title
             // 
-            this.timer1.Tick += new System.EventHandler(this.A1Tick);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Name = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            resources.ApplyResources(this.Title, "Title");
+            this.Title.BackColor = System.Drawing.Color.Transparent;
+            this.Title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Title.Name = "Title";
+            this.Title.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -137,7 +131,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Title);
             this.Controls.Add(this.quantityammount);
             this.Controls.Add(this.quantity);
             this.Controls.Add(this.frequency);
@@ -164,8 +158,7 @@
         private Button frequency;
         private Button quantity;
         private TextBox quantityammount;
-        private System.Windows.Forms.Timer timer1;
-        private Label label3;
+        private Label Title;
         private Label label4;
     }
 }
